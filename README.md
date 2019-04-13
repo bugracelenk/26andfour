@@ -1,2 +1,8 @@
 # 26andfour
-A Landing Page Template written in HTML, CSS and vanilla JavaScript
+
+Fully responsive landing page template written in HTML, CSS and vanilla JavaScript
+
+
+# Demo
+
+You can see the demo at http://26andfour.celenkworkspace.tech
