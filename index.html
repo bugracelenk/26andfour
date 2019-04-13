@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Design To Code</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+    <!-- header start -->
+    <div class="container">
+      <header>
+        <img src="images/logo.svg" alt="Logo" />
+        <nav>
+          <a href="#" class="hide-desktop">
+            <img
+              src="images/ham.svg"
+              alt="toggle menu"
+              class="menu"
+              id="menu"
+            />
+          </a>
+
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li class="exit-btn hide-desktop" id="exit">
+              <img src="images/exit.svg" alt="" />
+            </li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--header end-->
+
+      <!-- banner section start -->
+      <section>
+        <img src="images/server.svg" alt="" class="server" />
+        <h1>Web Hosting for the Modern Era</h1>
+        <p class="subhead">Go serverless and pay only for what you use</p>
+
+        <img
+          src="images/scroll.svg"
+          alt="scroll down"
+          class="scroll hide-mobile show-desktop"
+        />
+      </section>
+    </div>
+    <!-- banner section ends-->
+
+    <!-- features section start -->
+    <div class="blue-container">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="images/icon-1.svg" alt="icon 1" />
+            <p>
+              tincidunt tortor aliquam nulla facilisi cras fermentum odio eu
+              feugiat pretium nibh ipsum consequat nisl vel pretium lectus
+            </p>
+          </li>
+          <li>
+            <img src="images/icon-2.svg" alt="icon 1" />
+            <p>
+              tincidunt tortor aliquam nulla facilisi cras fermentum odio eu
+              feugiat pretium nibh ipsum consequat nisl vel pretium lectus
+            </p>
+          </li>
+          <li>
+            <img src="images/icon-3.svg" alt="icon 1" />
+            <p>
+              tincidunt tortor aliquam nulla facilisi cras fermentum odio eu
+              feugiat pretium nibh ipsum consequat nisl vel pretium lectus
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- features section ends -->
+
+    <!-- testimonial section starts -->
+    <div class="gray-container">
+      <div class="container">
+        <ul>
+          <li>
+            <figure>
+              <img src="images/user1.png" alt="user testimonial picture" />
+              <blockquote>
+                tincidunt tortor aliquam nulla facilisi cras fermentum odio eu
+                feugiat pretium nibh ipsum consequat nisl vel pretium lectus
+              </blockquote>
+              <figcaption>- Jane Doe</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="images/user2.png" alt="user testimonial picture" />
+              <blockquote>
+                tincidunt tortor aliquam nulla facilisi cras fermentum odio eu
+                feugiat pretium nibh ipsum consequat nisl vel pretium lectus
+              </blockquote>
+              <figcaption>- John Doe</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--testimonial section ends-->
+
+    <!-- free trial section starts -->
+    <div class="container">
+      <h2>Start your free trial now!</h2>
+      <a href="#" class="cta">Get Started</a>
+    </div>
+    <!-- free trial section ends -->
+
+    <!-- footer starts -->
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <a href="#">
+            <img src="images/logo-white.svg" alt="logo" class="logo" />
+          </a>
+          <p class="address">Melrose Place, 90210<br />USA</p>
+          <ul class="footer-links">
+            <li>
+              <a href="#">Terms of Service</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="filler"></div>
+    </footer>
+    <!-- footer ends -->
+
+    <script>
+      var menu = document.getElementById("menu");
+      var nav = document.getElementById("nav");
+      var exit = document.getElementById("exit");
+
+      menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+      })
+
+      exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+      })
+    </script>
+
+  </body>
+</html>
